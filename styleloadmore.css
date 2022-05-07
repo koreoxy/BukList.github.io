@@ -1,0 +1,13 @@
+.loadmore-frame .col-md-4{
+    display:none;
+    padding: .5rem;
+  }
+  .loadmore-frame .content {
+      background-color: #333;
+      height: 200px;
+      width: 100%;
+      border: 1px solid #ccc;
+      color: #fff;
+      font-size: 50px;
+      line-height: 200px;
+  }

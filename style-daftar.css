@@ -1,0 +1,79 @@
+body{
+    font-family: Poppins;
+    background-color: #557B83;
+}
+
+.box-bg{
+    background-color:#E5EFC1;
+    
+    box-shadow: 20px 20px 0 0 #A7B087;
+}
+
+
+
+.form-label{
+    font-size: 15px;
+    font-weight: 700;
+    color: #4a6a70;
+}
+
+.bg-box{
+    background-color: #A7B087;
+    color: #ffff;
+    font-size: 48px;
+    font-weight: 700;
+    border-radius: 15px;
+    width: 203px;
+    height: 65px;
+    margin: auto;
+}
+
+
+h2{
+    padding-top: 25px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #A7B087;
+}
+
+.form-control{
+    background-color: #A7B087;
+    color: #ffff;
+}
+
+
+.footer {
+    
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* NAVLINK FOOTER */
+.list-unstyled {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700; 
+    margin-top: 10px;
+    
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+
+
+
+
+.btn{
+    background-color: #A2D5AB;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 400;
+    width: 265px;
+    height: 51px;
+    border-radius: 15px;
+}

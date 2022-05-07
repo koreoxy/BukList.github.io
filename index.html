@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/bf5007c3ce.js" crossorigin="anonymous"></script>
+
+
+    <title>BukList</title>
+  </head>
+  <body>
+    
+    <!-- NAVBAR HEADER -->
+    <div class="container fluid">
+        <div class="container" style="background-color: #39AEA9;">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">BukList</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">List Buku</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Genre</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Top Buku</a>
+                    </li>
+                    </ul>
+                    <div>
+                        <button class="button-primary mx-1">Daftar</button>
+                        <button class="button-secondary mx-1">Login</button>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- SEARCH BOX -->
+    <div class="container-fluid py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="search-box">
+                        <div class="container-search">
+                            <form>
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" id="Form_Search" value="" placeholder="Search Buku" role="searchbox" class="InputBox " autocomplete="off"><input type="submit" id="Form_Go" class="Button" value="GO">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- TOP TRENDING BUKU -->
+    <div class="container fluid">
+        <div class="container" style="background-color: #39AEA9;">
+            <div class="row">
+                <div class="col">
+                    <div class="col-12 text-center py-1">
+                        <h1 class="title-top">Top Trending Buku</h1>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <!-- SLIDE ONE -->
+                            <div class="row">
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 2.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 3.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 4.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 4.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          </div>
+                          <!-- SLIDE TWO -->
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 2.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 3.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 4.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 2.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <!-- SLIDE TIGA -->
+                          <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 3.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+    
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 2.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 3.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 2.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm mx-auto text-center gambar">
+                                    <div class="card text-white mb-3">
+                                        <img src="img/COVER 4.png" alt="" class="img-fluid">
+                                        <div class="rating">
+                                            <p class="rating-icon fa-solid fa-star"></p>
+                                            <a>7.7</a>
+                                        </div>
+                                        <div class="text-judul">Header</div>
+                                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- AKHIR TOP TRENDING BUKU -->
+
+<!-- AWAL NEW RILIS BUKU  -->
+<div class="container fluid">
+    <div class="container">
+        <div class="row">
+            <!-- AWAL KOLOM CARD NEW RILIS BUKU -->
+            <div class="col-8 new-rilis-bg py-5"><b>New Rilis Buku</b>
+                <div class="row">
+                    <div class="col-sm-3 content">
+                        <div class="card text-center text-white mb-3 card-rilis">
+                            <img src="img/COVER 1.png" alt="" class="img-fluid">
+                            <div class="card-header">Header</div>
+                            <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 content">
+                        <div class="text-card-rilis"><b>Judul</b>
+                        </br>
+                            <p class="rating-icon fa-solid fa-star"></p>
+                            <a>7.7</a>
+                            <p><b>Sinopsis</b></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- PEMBATAS -->
+                <div class="row">
+                  <div class="col-sm-3 content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 2.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- PEMBATAS -->
+                <div class="row">
+                  <div class="col-sm-3 content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 3.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- PEMBATAS -->
+                <div class="row">
+                  <div class="col-sm-3 content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 4.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- PEMBATAS -->
+                <div class="row">
+                  <div class="col-sm-3 content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 1.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- PEMBATAS -->
+                <div class="row">
+                  <div class="col-sm-3 content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 2.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+                </div>
+  
+                <!-- PEMBATAS -->
+                <div class="row">
+                  <div class="col-sm-3 content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 3.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- PEMBATAS -->
+                <div class="row">
+                    <div class="col-sm-3 content">
+                        <div class="card text-center text-white mb-3 card-rilis">
+                            <img src="img/COVER 4.png" alt="" class="img-fluid">
+                            <div class="card-header">Header</div>
+                            <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 content">
+                        <div class="text-card-rilis"><b>Judul</b>
+                        </br>
+                            <p class="rating-icon fa-solid fa-star"></p>
+                            <a>7.7</a>
+                            <p><b>Sinopsis</b></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                        </div>
+                    </div>
+                  </div>
+  
+                    <!-- BUTTON LOAD MORE -->
+  
+                    <a href = "#" id = "loadMore"> Load More </a>  
+  
+                    <!-- AKHIR BUTTON LOAD MORE -->
+              </div>
+
+                <!-- AWAL KOLOM CARD MOST SEARCH BUKU -->
+                <div class="col-3 offset-1 py-5 background-most-search-buku"><b>Most Search Buku</b>
+                    <div class="row">
+                        <div class="col kolom-gambar-most">
+                            <img src="img/COVER 1.png" alt="" class="img-fluid gambar-card-most">
+                        </div>
+                        <div class="col kolom-text-most">
+                            <div class="text-most"><b>Judul</b>
+                            </br>
+                                <p class="rating-icon fa-solid fa-star"></p>
+                                <a>7.7</a>
+                                <p class="text-most-p">Hal/Chapter: </p>
+                                <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col kolom-gambar-most">
+                            <img src="img/COVER 2.png" alt="" class="img-fluid gambar-card-most">
+                        </div>
+                        <div class="col kolom-text-most">
+                            <div class="text-most"><b>Judul</b>
+                            </br>
+                                <p class="rating-icon fa-solid fa-star"></p>
+                                <a>7.7</a>
+                                <p class="text-most-p">Hal/Chapter: </p>
+                                <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col kolom-gambar-most">
+                            <img src="img/COVER 3.png" alt="" class="img-fluid gambar-card-most">
+                        </div>
+                        <div class="col kolom-text-most">
+                            <div class="text-most"><b>Judul</b>
+                            </br>
+                                <p class="rating-icon fa-solid fa-star"></p>
+                                <a>7.7</a>
+                                <p class="text-most-p">Hal/Chapter: </p>
+                                <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col kolom-gambar-most">
+                            <img src="img/COVER 4.png" alt="" class="img-fluid gambar-card-most">
+                        </div>
+                        <div class="col kolom-text-most">
+                            <div class="text-most"><b>Judul</b>
+                            </br>
+                                <p class="rating-icon fa-solid fa-star"></p>
+                                <a>7.7</a>
+                                <p class="text-most-p">Hal/Chapter: </p>
+                                <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col kolom-gambar-most">
+                            <img src="img/COVER 5.png" alt="" class="img-fluid gambar-card-most">
+                        </div>
+                        <div class="col kolom-text-most">
+                            <div class="text-most"><b>Judul</b>
+                            </br>
+                                <p class="rating-icon fa-solid fa-star"></p>
+                                <a>7.7</a>
+                                <p class="text-most-p">Hal/Chapter: </p>
+                                <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <!-- AKHIR KOLOM CARD MOST SEARCH BUKU -->
+                
+                
+            </div>
+        </div>
+    </div>
+<!-- AKHIR NEW RILIS BUKU  -->
+
+
+<!-- AWAL FOTTER -->
+<section class="footer pt-5">
+    <!-- Footer -->
+    <footer class="text-center text-white " style="background-color: #39AEA9;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Daftarkan Akun Anda! </span>
+            <button type="button" class="btn btn-outline-light btn-rounded">
+              Daftar
+            </button>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="">BukList</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+<!-- AKHIR FOTTER -->
+
+
+
+
+
+
+
+<!-- JAVASCRPIT -->
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>  
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>  
+    <script>  
+    $(document).ready (function () {  
+    $(".content").slice(0, 8).show();  
+    $("#loadMore").on("click", function(e){  
+        e.preventDefault();  
+        $(".content:hidden").slice(0, 8).slideDown();  
+        if ($(".content:hidden").length == 0) {  
+        $("#loadMore").text("No Content").addClass("noContent");  
+        }  
+    });  
+    })  
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

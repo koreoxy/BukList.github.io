@@ -1,0 +1,264 @@
+:root{
+    --pr-color : #16771A;
+}
+
+
+
+
+body{
+    font-family: Poppins;
+    background-color: #557B83;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.nav-link.active{
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: 15px;
+    
+}
+
+.button-primary{
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    color: var(--pr-color);
+    border-style: solid;
+    border-color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.button-secondary{
+    
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+
+.title-top{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.gambar{
+    padding-bottom: 10px;
+}
+
+.card-body{
+    background-color: transparent;
+}
+
+.card{
+    padding-bottom: 10px;
+    background-color: #1A1A1A;
+}
+
+.button-add-list{
+    width: 104.19px;
+    height: 20.84px;
+    background-color: #525252;
+    color: #77FF7C;
+    font-size: 12px;
+    font-weight: 275;
+    border-radius: 5px;
+}
+
+.carousel-item{
+    
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.new-rilis-bg{
+    background-image: linear-gradient(#70ba7200, #39AEA9);
+    text-align: center;
+    color: #fff;
+}
+
+
+.text-card-rilis{
+    color: #fff;
+    text-align: left;
+    
+    
+}
+
+.card-rilis{
+    width: 124px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.kolom{
+    padding: 1rem;
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+}
+
+.background-most-search-buku{
+    background-image: linear-gradient(#70ba7200, #39AEA9);
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 320px 1026px;
+}
+
+
+.gambar-card-most{
+    width: 94px;
+    height: 151px;
+    
+}
+
+.kolom-gambar-most{
+    padding: 1rem;
+    
+   
+}
+
+.kolom-text-most{
+    padding: 1rem;
+    
+}
+
+.text-most{
+    text-align: left;
+}
+
+.rating-icon{
+    color: #FAFF00;
+}
+
+.text-judul{
+    padding-bottom: 15px;
+}
+
+.text-most-p{
+    
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.content {  
+    display: none;
+}  
+
+#loadMore {  
+    width: 275px;  
+    height: 24px;
+    color: #fff;  
+    display: block;  
+    text-align: center;  
+    margin: 20px auto;  
+    border-radius: 10px;  
+    border: 1px solid transparent;  
+    text-align: center;  
+    font-size: 12px;  
+    color: #595959;  
+    font-weight: 400;   
+    background-color: #C4C4C4;
+}  
+
+#loadMore:hover {  
+    color: rgb(0, 0, 0);  
+    background-color: #fff;  
+    border: 1px solid rgb(0, 0, 0);  
+    text-decoration: none;  
+}
+
+.noContent {  
+    color: #fff !important;  
+    background-color: #000 !important;  
+    pointer-events: none;  
+}  
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+
+    .nav-link.active{
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .nav-link {
+        text-transform: uppercase;
+        font-size: 15px;
+        
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .button-primary{
+        width: 100px;
+        height: 30px;
+        background-color: #fff;
+        color: var(--pr-color);
+        border-style: solid;
+        border-color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+    
+    .button-secondary{
+        width: 100px;
+        height: 30px;
+        background-color: transparent;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        
+    }
+
+    .button-add-list{
+        width: 104.19px;
+        height: 20.84px;
+        background-color: #525252;
+        color: #77FF7C;
+        font-size: 12px;
+        font-weight: 275;
+        border-radius: 5px;
+    }
+
+    .card{
+        padding-bottom: 10px;
+        background-color: #1A1A1A;
+    }
+
+    
+
+ 
+
+}
+
+
+
+

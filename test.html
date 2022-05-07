@@ -1,0 +1,323 @@
+<!doctype html>  
+<html>  
+<head>  
+    <title>Load more Example in bootstrap - Codeplaners</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS 
+    <script src="https://kit.fontawesome.com/bf5007c3ce.js" crossorigin="anonymous"></script>
+    -->
+<!--  
+<style>  
+.content {  
+  height: 100px;   
+  color: #000;  
+  font-size: 24px;  
+  line-height: 100px;
+  text-align: center;  
+  background-color: rgb(224, 35, 35);    
+  border: 1px solid #ccc;  
+  display: none;  
+}  
+#loadMore {  
+  width: 200px;  
+  color: #fff;  
+  display: block;  
+  text-align: center;  
+  margin: 20px auto;  
+  padding: 10px;  
+  border-radius: 10px;  
+  border: 1px solid transparent;  
+  text-align: center;  
+  font-size: 1.5em;  
+  color: #fff;  
+  font-weight: 700;  
+  text-transform: uppercase;   
+  background-color: #000;
+}  
+#loadMore:hover {  
+  color: blue;  
+  background-color: #fff;  
+  border: 1px solid blue;  
+  text-decoration: none;  
+}  
+.noContent {  
+  color: #fff !important;  
+  background-color: #000 !important;  
+  pointer-events: none;  
+}  
+}  
+</style>  
+-->
+</head>  
+<body>              
+<h2 align="center">Load more Example in bootstrap - Codeplaners</h2>    
+<br /> <br />    
+<!-- AWAL NEW RILIS BUKU  -->
+
+<div class="container fluid">
+  <div class="container">
+      <div class="row">
+          <!-- AWAL KOLOM CARD NEW RILIS BUKU -->
+          <div class="col-8 new-rilis-bg py-5 kolom "><b>New Rilis Buku</b>
+              <div class="row kolom">
+                  <div class="col-5 kolom content">
+                      <div class="card text-center text-white mb-3 card-rilis">
+                          <img src="img/COVER 1.png" alt="" class="img-fluid">
+                          <div class="card-header">Header</div>
+                          <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                      </div>
+                  </div>
+                  <div class="col-sm-6 kolom content">
+                      <div class="text-card-rilis"><b>Judul</b>
+                      </br>
+                          <p class="rating-icon fa-solid fa-star"></p>
+                          <a>7.7</a>
+                          <p><b>Sinopsis</b></p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- PEMBATAS -->
+              <div class="row kolom">
+                <div class="col-5 kolom content">
+                    <div class="card text-center text-white mb-3 card-rilis">
+                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                        <div class="card-header">Header</div>
+                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 kolom content">
+                    <div class="text-card-rilis"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p><b>Sinopsis</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- PEMBATAS -->
+              <div class="row kolom">
+                <div class="col-5 kolom content">
+                    <div class="card text-center text-white mb-3 card-rilis">
+                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                        <div class="card-header">Header</div>
+                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 kolom content">
+                    <div class="text-card-rilis"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p><b>Sinopsis</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- PEMBATAS -->
+              <div class="row kolom">
+                <div class="col-5 kolom content">
+                    <div class="card text-center text-white mb-3 card-rilis">
+                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                        <div class="card-header">Header</div>
+                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 kolom content">
+                    <div class="text-card-rilis"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p><b>Sinopsis</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- PEMBATAS -->
+              <div class="row kolom">
+                <div class="col-5 kolom content">
+                    <div class="card text-center text-white mb-3 card-rilis">
+                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                        <div class="card-header">Header</div>
+                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 kolom content">
+                    <div class="text-card-rilis"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p><b>Sinopsis</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- PEMBATAS -->
+              <div class="row kolom">
+                <div class="col-5 kolom content">
+                    <div class="card text-center text-white mb-3 card-rilis">
+                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                        <div class="card-header">Header</div>
+                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 kolom content">
+                    <div class="text-card-rilis"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p><b>Sinopsis</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- PEMBATAS -->
+              <div class="row kolom">
+                <div class="col-5 kolom content">
+                    <div class="card text-center text-white mb-3 card-rilis">
+                        <img src="img/COVER 1.png" alt="" class="img-fluid">
+                        <div class="card-header">Header</div>
+                        <button class="button-add-list mx-auto fa-plus">List Buku</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 kolom content">
+                    <div class="text-card-rilis"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p><b>Sinopsis</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                    </div>
+                </div>
+              </div>
+
+                  <!-- BUTTON LOAD MORE -->
+
+                  <a href = "#" id = "loadMore"> Load More </a>  
+
+                  <!-- AKHIR BUTTON LOAD MORE -->
+            </div>
+              <!-- AKHIR KOLOM CARD NEW RILIS BUKU -->
+          <!-- AWAL KOLOM CARD MOST SEARCH BUKU -->
+          <div class="col-3 offset-1 py-5 background-most-search-buku"><b>Most Search Buku</b>
+            <div class="row">
+                <div class="col kolom-gambar-most">
+                    <img src="img/COVER 1.png" alt="" class="img-fluid gambar-card-most">
+                </div>
+                <div class="col kolom-text-most">
+                    <div class="text-most"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p class="text-most-p">Hal/Chapter: </p>
+                        <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col kolom-gambar-most">
+                    <img src="img/COVER 2.png" alt="" class="img-fluid gambar-card-most">
+                </div>
+                <div class="col kolom-text-most">
+                    <div class="text-most"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p class="text-most-p">Hal/Chapter: </p>
+                        <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col kolom-gambar-most">
+                    <img src="img/COVER 3.png" alt="" class="img-fluid gambar-card-most">
+                </div>
+                <div class="col kolom-text-most">
+                    <div class="text-most"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p class="text-most-p">Hal/Chapter: </p>
+                        <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col kolom-gambar-most">
+                    <img src="img/COVER 4.png" alt="" class="img-fluid gambar-card-most">
+                </div>
+                <div class="col kolom-text-most">
+                    <div class="text-most"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p class="text-most-p">Hal/Chapter: </p>
+                        <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col kolom-gambar-most">
+                    <img src="img/COVER 5.png" alt="" class="img-fluid gambar-card-most">
+                </div>
+                <div class="col kolom-text-most">
+                    <div class="text-most"><b>Judul</b>
+                    </br>
+                        <p class="rating-icon fa-solid fa-star"></p>
+                        <a>7.7</a>
+                        <p class="text-most-p">Hal/Chapter: </p>
+                        <p class="text-most-p">Lorem ipsum dolor sit amet, </p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- AKHIR KOLOM CARD MOST SEARCH BUKU -->
+        
+        
+    </div>
+</div>
+</div>
+<!-- AKHIR NEW RILIS BUKU  -->
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>  
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>  
+<script>  
+$(document).ready (function () {  
+  $(".content").slice(0, 8).show();  
+  $("#loadMore").on("click", function(e){  
+    e.preventDefault();  
+    $(".content:hidden").slice(0, 8).slideDown();  
+    if ($(".content:hidden").length == 0) {  
+      $("#loadMore").text("No Content").addClass("noContent");  
+    }  
+  });  
+  })  
+</script>  
+</body>  
+</html>
